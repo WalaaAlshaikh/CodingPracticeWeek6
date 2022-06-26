@@ -1,0 +1,41 @@
+.container-fluid{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    word-spacing: 3px;
+    background-image:url(assets/background.jpg);
+background-size: cover;
+padding: 20px;}
+
+#pythonImg{
+width: 350px;
+}
+.search-box{
+    background-color: aliceblue;
+    -moz-box-shadow: 10px 10px 5px #ccc;
+    -webkit-box-shadow: 10px 10px 5px #ccc;
+    box-shadow: 5px 5px 5px #ccc;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    border-radius: 10px;
+}
+.nav{
+    background: rgb(233, 245, 253);
+    background: linear-gradient(180deg, rgba(248, 249, 250, 0.639) 0%, rgba(0,127,212,0.16523704208245793) 48%, rgba(243, 246, 248, 0.689) 100%);
+margin-left: 360px;
+margin-right: 300px;
+border-radius: 5px;
+
+}
+#nav-tab{
+   
+   
+}
+.nav-pills{
+ 
+}
+.white{
+color: #ccc;
+}
+.nav-link{
+    color: rgb(255, 255, 255) !important;
+}
