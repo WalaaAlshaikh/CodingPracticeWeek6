@@ -41,13 +41,21 @@ border-radius: 5px;
 }
 
 .white{
-color: #ccc;
+color:rgb(255, 233, 70);
 }
 .nav-link{
     color: rgb(255, 255, 255) !important;
 }
-#carouselExampleCaption{
+#carouselExampleFade{
+    left: 5%;
   width: fit-content ;
+}
+.card{
+    border-top: 5px solid  rgb(255, 233, 70)!important ;
+    left: 0.5%;
+    background-color:rgba(244, 249, 254,0.7) !important;
+    text-align: center !important;
+    color: #fff;
 }
 .cap1{
     top: 36%;
@@ -81,6 +89,7 @@ color: #ccc;
 }
 .last{
     text-align: center;
+    color: rgb(255, 255, 255) ;
 }
 
 
