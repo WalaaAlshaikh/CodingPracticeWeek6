@@ -19,36 +19,43 @@
         <div class="col-9 mt-3 ">
             <img id="pythonImg" src="assets/python.png" alt="logo-image">
         </div>
-        
+
         <div class="col-3 text-center">
-            <p>Text Size: <span> <a href="#">Normal</a> </span> | <span> <a href="#">Large</a></span></p>
+            <p>Text Size: <span> <a class="text-size"  href="#" value="Increase Font Size 1px" onclick="increaseFontSizeBy1px()">Normal</a> </span> | <span> <a class="text-size"
+                        href="#" value="Increase Font Size 100px" onclick="increaseFontSizeBy100px()">Large</a></span></p>
             <div class="search-box p-3">
-                <input class="search p-1 text-center"  type="text" placeholder="search">
-                <button class="goBtn p-1">Go</button>
+                <input class="search p-1 text-center" type="text" placeholder="search">
+                <button class="goBtn px-3 ">Go</button>
             </div>
         </div>
     </div>
     <nav>
         <div class="nav justify-content-center nav-pills  " id="nav-tab" role="tablist">
-           
-          <button class="nav-link px-5 active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-about" type="button" role="tab" aria-controls="nav-about" aria-selected="true">About</button>
-          <button class="nav-link px-5" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Downloads</button>
-          <button class="nav-link px-5" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Documentaion</button>
-          <button class="nav-link px-5" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Community</button>
-          <button class="nav-link px-5" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">News</button>
-          <button class="nav-link px-5" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Events</button>
-          
+
+            <button class="nav-link px-5 active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-about"
+                type="button" role="tab" aria-controls="nav-about" aria-selected="true">About</button>
+            <button class="nav-link px-5" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Downloads</button>
+            <button class="nav-link px-5" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Documentaion</button>
+            <button class="nav-link px-5" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Community</button>
+            <button class="nav-link px-5" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                type="button" role="tab" aria-controls="nav-contact" aria-selected="false">News</button>
+            <button class="nav-link px-5" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Events</button>
+
         </div>
-      </nav>
-      <!-- <div class="tab-content" id="nav-tabContent">
+    </nav>
+    <!-- <div class="tab-content" id="nav-tabContent">
         <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">...</div>
         <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">...</div>
         <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...</div>
         <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">...</div>
       </div> -->
-    <div class=" m-4 row">
-        <div class=" mt-3 h-25 col-2 left">
-        
+    <div  id="a"  class=" m-4 row">
+        <div  class="  mt-1  col-2 left">
+
             <ul>
                 <li> <a class="bold white" href="#">Docs </a>
                 </li>
@@ -60,70 +67,80 @@
                 <li> <a class="bold white" href="#">FAQ</a> </li>
             </ul>
         </div>
-        <div class=" m-3 p-5 col right">
-            <h2>JavaScript Basics</h2>
-            <p> JavaScript is a cross-platform, object-oriented cripting language.JavaScript is extremely popular
-                for a variety of reasons. It is a small and
-                lightweight language allowing masimum flexibiliy for developers to take it in a bunch of different
-                directions. JavaScript lives inside a host
-                environment (a web browser or Node server), it can be connected to the objects of these enviroments
-                to provide programmatic control over
-                them.</p>
-            <ul> <br>
-                <li id="declare">
-                    <a class="bold black" href="#">Variable Declaration</a> JavaScript variables are containers for storing data
-                    values- Imagine a cup
-                    you fill with coffee, the cup holds the coffee,
-                    a variable holds a value. All Javascnpt variables must be dentihed with unique names. These
-                    unique names are called identifiers. <span> var x;</span>
-                </li>
-                <br>
-                <li id="assign">
-                    <a class="bold black" href="#">Variable Assignment</a>  Assignment operatons assign values to JavaScript variables-our cup can now
-                    have coffee poured in it, giving our
-                    variabie a value to hold. Ihe = assignment operator assigns a value to a variable.<span> var x=10;</span> 
-                </li>
-                <br>
-                <li id="datatype">
-                    <a class="bold black" href="#">Data Types</a>  Data types are an important concept; to be able to operate on variables you need to know the data type. There are six data types
-                    that are JavaScript primitives: Boolean- <span>true</span>  or <span>false;</span>  null - <span>null</span>  aka nothing; Number- <span> 42 </span>or <span> 3.14159;</span>  String- <span>"Coding Dojo Rocks!";</span> 
-                    Array- <span>[1, 'Coding',2, 'DoJo'];</span> und Object- <span>{first_name: 'Jane', last_name: 'Doe'}</span> 
-                </li>
-                <br>
-              <li id="condition">  <a  class="bold black"href="#">Conditions</a> when you write code, you want to perform different actions 1or different decisions - hitting different code blocks based on
-                values or oonditions that have been met. You can use conditional statements in your code to accomplish this. There are the following
-                conditional statements:<span> if</span>  a specified condition is ture, do this code in our code block,<span> else if</span>  to specify a new condnton to lest, if the first
-                condition is false; <span> else</span> we execute this block of code; 
-            </li>
-            <br>
-            <li id="loops">  <a class="bold black" href="#">Loops</a> There are many different kinds of loops in every programming language, but they all essentially do the same thing: they will repeat an 
-                action some number of times. Image you have to run a mile, well you run around a track four times and then you stop.That's a loop!
-            </li>
-            <br>
-            <li id="fun">  <a class="bold black" href="#">Functions</a> Functions are an encaspulation of a code block. When we call our function this will run that code block. Think of it as a list of
-                Instructions. As an example imagine we are putting together a desk trom Ikea, we open up the instructon manual and get started, first we
-                screw the legs to the table top; next we place the table the right way up. Done! We finished our instructions. Sadly there are a ton more
-                tables to do so lets call our function over and over and over again.
-            </li>
+        <div class=" m-3 px-5 col-9 right">
+            <p class="about"> First appearing in 1991, Python is a general-purpose, hight-level, interpreted programming
+                language
+                whose design focus emphasizes code readibility. Whether for processing
+                /analyzing data to powering many well-known applications. Python is not only a great language for new
+                programmers but also powerful enough for seasoned developers building whatever they can think of.
+
+            </p>
+
+            <h4 class="yellow"> <i>Beautiful is better than ugly;</i></h4>
+            <h4 class="yellow"> <i>Explicit is better than implicit;</i></h4>
+            <h4 class="yellow"> <i>Complex is better than complicated;</i></h4>
+            <h4 class="yellow"> <i>Simple is better than complex;</i></h4>
+            <h4 class="yellow"><i>Readability counts;</i></h4>
+            <p class="last">The Zen of Python</p>
+         
 
 
-                
-            </ul>
+
+
+
+
+
+
+
+        </div>
+        <div class="m-5 justify-content-center row buttom">
+            <div id="carouselExampleCaption" class="carousel   " data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/python (2).png" class="d-block back caro" alt="...">
+                        <div class="carousel-caption cap1 ">
+                            <h4>Get Started</h4>
+                            <p>Whether you're new to programming or an experienced developer, it's easy to learn and use Python.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/python (2).jpg" class="d-block back  caro" alt="...">
+                        <div class="carousel-caption cap2 ">
+                            <h4>Success</h4>
+                            <p>Python's convenience has made it the most popular language for machine learning and artificial intelligence. Python's flexibility has allowed Anyscale to make ML/AI scalable from laptops to clusters.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images.jpg" class="d-block back  caro" alt="...">
+                        <div class="carousel-caption cap3 ">
+                            <h4>Python Software Foundation</h4>
+                            <p>The mission of the Python Software Foundation is to promote, protect, and advance the Python programming language, and to support and facilitate the growth of a diverse and international community of Python programmers</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaption"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaption"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
 
-    </div>
-    <div class="m-3 row buttom">
-        <p> For more useful information check out this url: <a class="link" href="https://www.javascript.com/">JavaScript!</a></p>
+
     </div>
 
+    <body>
 
-</div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
 
-<body>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
-</body>
+            <script src="script.js"></script>
+    </body>
 
 </html>
