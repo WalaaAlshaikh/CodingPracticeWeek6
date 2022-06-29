@@ -21,7 +21,7 @@
         </div>
 
         <div class="col-3 text-center">
-            <p>Text Size: <span> <a class="text-size"  href="#" value="Increase Font Size 1px" onclick="increaseFontSizeBy1px()">Normal</a> </span> | <span> <a class="text-size"
+            <p class="text">Text Size: <span> <a class="text-size"  href="#" value="Increase Font Size 1px" onclick="increaseFontSizeBy1px()">Normal</a> </span> | <span> <a class="text-size"
                         href="#" value="Increase Font Size 100px" onclick="increaseFontSizeBy100px()">Large</a></span></p>
             <div class="search-box p-3">
                 <input class="search p-1 text-center" type="text" placeholder="search">
@@ -54,7 +54,7 @@
         <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">...</div>
       </div> -->
     <div  id="a"  class=" m-4 row">
-        <div  class="  mt-1  col-2 left">
+        <div  class="  mt-1  h-25  col-2 left">
 
             <ul>
                 <li> <a class="bold white" href="#Docs">Docs </a>
@@ -66,7 +66,13 @@
                 <li> <a class="bold white" href="#Books">Python Books</a> </li>
               
             </ul>
+          
+                
+             
+           
         </div>
+       
+   
         <div class=" m-3 px-5 col-9 right">
             <p class="about"> First appearing in 1991, Python is a general-purpose, hight-level, interpreted programming
                 language
@@ -134,30 +140,32 @@
         <div class="row">
             <div class="card m-3 col" style="width: 18rem;">
                 <div class="card-body">
-                  <h5 id="Docs"class="card-title">Docs</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
+                  <h5 id="Docs"class="card-title text-muted">Docs</h5>
+                  
+                  <p class="card-text">Documentation for Python's standard library, along with tutorials and guides, are available online.</p>
+                  <a href="https://docs.python.org/3/" class="card-link">Click here</a>
+                  
                 </div>
               </div>
               <div class="card m-3 col" style="width: 18rem;">
                 <div class="card-body">
-                  <h5 id="Talks" class="card-title">Audio/Visual Talks</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
+                  <h5 id="Talks" class="card-title text-muted">Audio/Visual Talks</h5>
+                 
+                  <p class="card-text"> There is a growing body of podcasts, screencasts and video presentations for the Python community. It collects some of the best.</p>
+                  <a href="https://www.python.org/doc/av/" class="card-link">Click here</a>
+                 
                 </div>
               </div>
               <div class="card m-3 col" style="width: 18rem;">
                 <div class="card-body">
-                  <h5 id="Begin"class="card-title">Beginner's Guide</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
+                  <h5 id="Begin"class="card-title text-muted">Beginner's Guide</h5>
+                  
+                  <p class="card-text">Are you completely new to programming? If not then we presume you will be looking for information about why and how to get started with Python. It's easy for beginners to use and learn, so jump in!</p>
+                  <a href="https://www.python.org/about/gettingstarted/" class="card-link">Click here</a>
+                
                 </div>
+
+                
               </div>
 
 
@@ -167,29 +175,27 @@
         <div class="row">
             <div class="card m-3 col" style="width: 18rem;">
                 <div class="card-body">
-                  <h5 id="Develop" class="card-title">Developer's Guide</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
+                  <h5 id="Develop" class="card-title text-muted">Developer's Guide</h5>
+                 
+                  <p class="card-text">This guide is a comprehensive resource for contributing to Python – for both new and experienced contributors. It is maintained by the same community that maintains Python. We welcome your contributions to Python!</p>
+                  <a href="https://devguide.python.org/" class="card-link">Click here</a>
+               
                 </div>
               </div>
               <div class="card m-3 col" style="width: 18rem;">
                 <div class="card-body">
-                  <h5 id="pep" class="card-title">PEP Index</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
+                  <h5 id="pep" class="card-title text-muted">PEP Index </h5>
+                  <p class="card-text">This PEP contains the index of all Python Enhancement Proposals, known as PEPs. PEP numbers are assigned by the PEP editors, and once assigned are never changed. The version control history of the PEP texts represent their historical record.</p>
+                  <a href="https://peps.python.org/" class="card-link">Click here</a>
                 </div>
               </div>
               <div class="card m-3 col" style="width: 18rem;">
                 <div class="card-body">
-                  <h5 id="Books" class="card-title">Python Books</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
+                  <h5 id="Books" class="card-title text-muted">Python Books</h5>
+                 
+                  <p class="card-text">There are a variety of books about Python for beginners and advanced programmers recommended by the Python community. These books help programmers of all skill levels, from amateurs to code wizards.</p>
+                  <a href="https://wiki.python.org/moin/PythonBooks" class="card-link">Click here</a>
+              
                 </div>
               </div>
 
@@ -197,9 +203,22 @@
     
 
         </div>
+
+        <!-- Footer -->
+
       
 
     </div>
+
+    <footer class="page-footer font-small ">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2022 Copyright:
+          <a href="/"> Python.com</a>
+        </div>
+        <!-- Copyright -->
+      
+      </footer>
 
     <body>
 
@@ -209,5 +228,6 @@
 
             <script src="script.js"></script>
     </body>
+
 
 </html>
